@@ -100,4 +100,4 @@ if (totalCell) {
     }
   }
   totalCell.textContent = total.toFixed(2);
-}
+},
