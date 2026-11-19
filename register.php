@@ -6,7 +6,7 @@ include 'includes/header.php';
   <h2>Join Ereteti Dairy Sacco</h2>
   <p>Fill in the form and the office will contact you.</p>
 
-  <form action="process-register.php" method="post">
+  <form action="process-register.php" method="get">
 
     <p>
       <label for="first-name">First name</label><br>

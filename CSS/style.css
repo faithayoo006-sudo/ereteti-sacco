@@ -1,100 +1,104 @@
-/*elements
-the *-selects all elements
+Style CSS,  /*all elements
+the * - selects all elements
 */
-*{
-  box-sizing: border-box;
-body{
-    margin:0;
-    background-color:#f7f3e8;
-    color: #262626;
-    line-height:1.5;
-    /*font faces*/
-    1. source sans 3
-    2.source serif 4
-    */ font-family: source sans 3, source serif 4,sans-serif;
-}
-h1,h2{
+* {
+    box-sizing: border-box;
 }
 
-    font-family:'source serif 4',serif;
-    /*bold,bolder...*/
+body{
+    margin:0;
+    background: #f7f3e8;
+    color: #262626;
+    line-height:1.6;
+    /*font faces
+    1. Source Serif 4
+    2. Source Sans 3
+    */
+    font-family: 'Source Sans 3', sans-serif;
+}
+h1,h2{
+    font-family: 'Source Serif 4', serif;
+    /bold, bolder.../
     font-weight:600;
 }
 header{
-    background-color:#1f6f3e;
-    color:#f7f3e8
-
+    background:#1f6f3e;
+    color:#f7f3e8;
 }
 nav{
     background: #262626;
 }
 nav a{
     color: #f7f3e8;
+    text-decoration: none;
 }
-a{
-    color: #1f6f3e;
-}
-header,main,aside,footer{
-    padding: 1 rem;/*a relative unitp*/
+header, nav, main, footer{
+    padding: 1rem;/a relative unitip/
 }
 img{
-    max-width:100%;
+    max-width: 100%;
     height:auto;
 }
-/*flexbox -organizing elements along an axis- menu's*/
+
+/Flexbox-organizing elements along an axis-menu's/
 nav ul{
     display:flex;
     flex-wrap:wrap;
     gap: 0.25rem 1.5rem;
     list-style:none;
     margin:0;
+    /what is the value for padding-top,padding-bottom,padding-left,padding-right?/
     padding: 0.75rem 1rem;
 }
-nav a{
-    position:sticky;
+
+nav{
+    position: sticky;
     top:0;
 }
-/*grid layout*/
-body{
-    display: grid;
-    grid-template-columns: minmax(0,1fr)  18rem;
-    grid-template-areas:
-    "header header"
-    "nav nav"
-    "main aside"
-    "footer footer";
-
+section a{
+    color:black;
+    text-decoration: none;
 }
-header{ grid-area:header;}
-nav{ grid-area: nav;}
-main{grid-area: main;}
-aside{grid-area:aside;}
-footer{grid-area:footer;}
-.logo{
-    width:10%;
+aside a{
+    color:black;
+    font-weight: bold;
+}
+
+/grid layout/
+body{
+    display:grid;
+    grid-template-columns: minmax(0,1fr) 18rem;
+    grid-template-areas:"header header" "nav nav" "main aside" "footer footer";
+}
+header{
+    grid-area: header;
+}
+nav{
+    grid-area:nav;
+}
+main{
+    grid-area:main;
 }
 footer{
-    background-top: 3px solid #d8a22b;
+    grid-area:footer;
 }
-
-/*rwd -responsive web design*/
-/*media queries*/
-@media (max-width:700px){
+.logo{
+    width:10%
+}
+footer{
+    border-top:3px solid #d8a22b;
+}
+/RWD - responsive web design/
+@media (max-width: 700px){
     body{
-        grid-template-columns: minmax(0, 1fr);
-        grid-template-areas:
-        "header"
-        "naV"
-        "main"
-        "aside"
-        "footer";
-
+        grid-template-columns: minmax(0,1fr);
+        grid-template-areas:"header" "nav" "main" "aside" "footer";
     }
     nav{
-        position:static;
+        position: static;
     }
     nav ul{
-        flex-direction:colmn;
+        flex-direction: column;
     }
     .logo{
         width:2.5rem
@@ -102,7 +106,16 @@ footer{
 }
 .message{
     color: red;
-} 
+}
+
 input.invalid{
     border: 2px solid red;
+}
+.message {
+color: #B3261E;
+min-height: 1.5em;
+margin: 0.25rem 0 0.75rem;
+}
+input.invalid {
+border: 2px solid #B3261E;
 }
