@@ -16,9 +16,9 @@ your membership number is issued.</p>
 <section>
 <h2>Where we collect</h2>
 <ul>
-<li><a href="routes.html">Kiserian route</a></li>
-<li><a href="routes.html">Ngong route</a></li>
-<li><a href="routes.html">Rongai route</a></li>
+<li><a href="routes.php">Kiserian route</a></li>
+<li><a href="routes.php">Ngong route</a></li>
+<li><a href="routes.php">Rongai route</a></li>
 </ul>
 </section>
 <img src="img/cooler.pdf"
